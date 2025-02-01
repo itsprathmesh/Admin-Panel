@@ -1,0 +1,82 @@
+@import "tailwindcss";
+/* @tailwind utilities; */
+
+.bg-hero {
+    background-image: url(../src/img/bgMain.jpg);
+}
+
+/* Add this to your CSS file */
+@keyframes letterAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-text {
+   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: letterAnimation 6s linear infinite;
+  /* font-size: 55px; */
+  font-weight: 600;
+}
+
+.text-height2 {
+    line-height: 18px;
+    width: auto;
+    height: 36px;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+}
+
+
+/* Optional: Add additional styles for dark mode */
+body{
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark {
+  background-color: #000;
+  color: white;
+}
+
+/* scroll-to-top-button.css */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  color: #000;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #042446;
+  color: #fff;
+}
+
+.scroll-to-top-button:active {
+  transform: scale(0.95);
+}
