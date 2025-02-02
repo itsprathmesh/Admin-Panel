@@ -65,14 +65,14 @@ const Home = () => {
       </Helmet>
 
       <section className="h-[500px] bg-hero bg-no-repeat bg-cover bg-center py-20">
-        <div className="container mx-auto flex justify-around h-full">
+        <div className="container mx-auto text-wrap flex-wrap flex justify-around h-full px-8">
           {/* text */}
-          <div className="flex flex-col justify-center px-4">
-            <h1 className="uppercase text-wrap text-[35px] md:text-[55px] leading-[1.1] font-semibold mb-4 animate-text">
+          <div className="flex flex-col flex-wrap justify-center">
+            <h1 className="uppercase text-wrap text-[30px] md:text-[55px] leading-[1.1] font-semibold mb-4 animate-text">
               Welcome to Store!!
               <br />
             </h1>
-            <h3 className="font-semibold mb-4 text-light text-[20px] animate-text">
+            <h3 className="font-semibold mb-4 text-wrap text-light text-[20px] animate-text">
               Your perfect item is waiting to be discovered!
             </h3>
             <button
